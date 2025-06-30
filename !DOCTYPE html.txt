@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Campus Initiative Application</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f8f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        .form-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3a7d44;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #2c6e3f;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .input-group input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #3a7d44;
+            border-radius: 5px;
+            outline: none;
+            background: none;
+            color: #3a7d44;
+        }
+
+        .input-group input::placeholder, textarea::placeholder {
+            color: #3a7d44;
+        }
+
+        .checkbox-group label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        .checkbox-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            text-align: left;
+        }
+
+        button {
+            width: 100%;
+            background: #3a7d44;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #2c6e3f;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-title">Join the Green Campus Initiative</div>
+        <form action="#" method="post">
+            
+            <h3>Basic Information</h3>
+            <div class="input-group">
+                <input type="text" id="name" required placeholder="Enter your full name">
+            </div>
+            <div class="input-group">
+                <input type="text" id="student-number" required placeholder="Enter your student number">
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" required placeholder="example@edu.vut.ac.za">
+            </div>
+            <div class="input-group">
+                <input type="tel" id="phone" placeholder="+27 123 456 7890">
+            </div>
+            <div class="input-group">
+                <input type="text" id="faculty" required placeholder="Enter your faculty or department">
+            </div>
+            <div class="input-group">
+                <input type="text" id="year" required placeholder="Enter your year of study">
+            </div>
+
+            <h3>Skills & Roles</h3>
+            <p>Select the areas you are most interested in:</p>
+            <div class="checkbox-grid">
+                <label><input type="checkbox" name="interest"> Waste Management</label>
+                <label><input type="checkbox" name="interest"> Awareness Campaigns</label>
+                <label><input type="checkbox" name="interest"> Event Planning</label>
+                <label><input type="checkbox" name="interest"> Sustainable Design</label>
+                <label><input type="checkbox" name="interest"> Renewable Energy</label>
+                <label><input type="checkbox" name="interest"> Gardening / Landscaping</label>
+                <label><input type="checkbox" name="interest"> Tech & Media</label>
+            </div>
+
+            <h3>Motivation & Interest</h3>
+            <div class="input-group">
+                <textarea id="motivation" rows="4" required placeholder="Tell us why you want to join (200–300 words)"></textarea>
+            </div>
+
+            <h3>Confirmation & Consent</h3>
+            <div class="checkbox-group">
+                <label><input type="checkbox"> I agree to receive communications via social media</label>
+                <label><input type="checkbox"> I commit to attending at least one meeting or event per month</label>
+                <label><input type="checkbox"> I understand my information will be used for GCI purposes only</label>
+            </div>
+
+            <button type="submit">Apply Now</button>
+        </form>
+    </div>
+</body>
+</html>

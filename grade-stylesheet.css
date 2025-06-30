@@ -1,0 +1,16 @@
+@import url(header.css);
+
+/* Wrapper for the image */
+.div-image {
+  text-align: center;
+  padding: 1rem 5%;
+}
+
+/* Image styling */
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px; /* Optional: add rounding for a cleaner look */
+}

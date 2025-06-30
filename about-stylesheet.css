@@ -1,0 +1,166 @@
+@import url(header.css);
+
+/* General Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+/* Section 1 */
+#section-1 {
+  background-image: url(images/about-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+#header-title {
+  font-size: 3rem;
+  color: green;
+  text-shadow: 5px 5px 5px black;
+  font-weight: bolder;
+}
+
+#mission-statement {
+  color: whitesmoke;
+  text-shadow: 5px 0px 5px black;
+  font-size: 1.25rem;
+}
+
+/* Section 2 */
+#section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #C6D5E4;
+  padding: 2rem 5%;
+  gap: 1.5rem;
+}
+
+#section-2-div-1,
+#section-2-div-2 {
+  width: 100%;
+}
+
+#section-2-header {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: justify;
+}
+
+#dirty-hands {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 60% 0 60% 0;
+  object-fit: cover;
+}
+
+#about {
+  text-align: justify;
+}
+
+/* Section 3 */
+#section-3-1,
+#section-3,
+#section-4,
+#section-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 5%;
+  gap: 1rem;
+}
+
+#section-3-1,
+#section-3 {
+  background-color: #f5ea92;
+}
+
+#section-4 {
+  background-color: #f5ea92;
+}
+
+#section-5 {
+  background-color: #ff8f89;
+}
+
+.card-1 {
+  max-width: 100%;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: transparent;
+}
+
+.about-icon {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+#clean-up {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 60% 60% 10% 60%;
+  object-fit: cover;
+}
+
+.heading {
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Button */
+#btn-join {
+  all: revert;
+  color: white;
+  background-color: #001400;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+/* Tablet & Up */
+@media (min-width: 768px) {
+  #section-2,
+  #section-3,
+  #section-4,
+  #section-5 {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #section-2-div-1,
+  #section-2-div-2 {
+    width: 50%;
+  }
+
+  #dirty-hands,
+  #clean-up {
+    max-width: 50%;
+  }
+
+  #header-title {
+    font-size: 5rem;
+  }
+}

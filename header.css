@@ -1,0 +1,192 @@
+:root {
+  --Midnight_Forest: #001400;
+}
+
+#web-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-image: url("images/web 2.png");
+  background-size: cover;
+  background-position: center;
+  flex-wrap: wrap;
+}
+
+.header-item {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+}
+
+#me {
+  text-decoration: underline;
+}
+
+#web-title {
+  font-weight: bold;
+}
+
+#items-container {
+  align-content: end;
+}
+
+#items-container a {
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.title {
+  color: white;
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 20px;
+}
+
+html {
+  height: fit-content;
+}
+
+body {
+  margin: 0%;
+  background-color: #B9C7B9;
+}
+
+button {
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #1A3C34;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 40px;
+  flex-wrap: wrap;
+}
+
+.btn-footer {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.org {
+  text-align: center;
+}
+
+.footer-text {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+#slogan {
+  font-size: large;
+}
+
+#copyright {
+  font-size: smaller;
+}
+
+.text {
+  font-family: 'Roboto', sans-serif;
+}
+
+#icon {
+  width: 100px;
+}
+
+#footer-items-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-icon {
+  width: 30px;
+  padding-inline: 10px;
+  display: block;
+}
+
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+  #web-header {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #logo {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+
+  #items-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  #items-container a {
+    margin: 8px 0;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .btn-footer {
+    margin-bottom: 10px;
+  }
+
+  #footer-items-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-icon {
+    width: 24px;
+    padding: 5px;
+  }
+
+  #icon {
+    width: 80px;
+  }
+
+  #slogan {
+    font-size: medium;
+  }
+
+  #copyright {
+    font-size: smaller;
+  }
+}

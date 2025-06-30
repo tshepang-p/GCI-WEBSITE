@@ -1,0 +1,165 @@
+@import url(header.css);
+
+/* Base styles – mobile first */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  line-height: 1.6;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5% 5%;
+  box-sizing: border-box;
+}
+
+#info,
+#form {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Header style */
+#header {
+  color: #2c6e3f;
+}
+
+/* Icons */
+.contact-icon {
+  border-radius: 30%;
+  width: 60px;
+}
+
+/* Text styling */
+#text-3 {
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-block: 5%;
+}
+
+.contact-section:visited {
+  color: black;
+}
+
+.contact-text {
+  margin: 0;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.contact-text-2 {
+  margin: 0;
+  font-size: 30px;
+  color: black;
+}
+
+.img-div {
+  display: flex;
+  justify-content: center;
+  padding-right: 0;
+}
+
+/* Form layout */
+form {
+  display: grid;
+  gap: 10px;
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3a7d44;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #2c6e3f;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.input-group input,
+textarea {
+  padding: 10px;
+  border: 1px solid #3a7d44;
+  border-radius: 5px;
+  outline: none;
+  background: none;
+  color: #3a7d44;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.input-group input::placeholder,
+textarea::placeholder {
+  color: #3a7d44;
+}
+
+.checkbox-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.checkbox-grid {
+  display: grid;
+  gap: 10px;
+}
+
+/* Submit button */
+#apply {
+  width: 100%;
+  background: #3a7d44;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#apply:hover {
+  background: #2c6e3f;
+}
+
+/* Tablet and Desktop view */
+@media (min-width: 768px) {
+  #container {
+    flex-direction: row;
+    padding: 3% 10%;
+  }
+
+  #info,
+  #form {
+    width: 50%;
+  }
+
+  .contact-section {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .img-div {
+    padding-right: 20px;
+  }
+
+  #apply {
+    width: 30%;
+  }
+}

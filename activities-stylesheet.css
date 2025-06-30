@@ -1,0 +1,72 @@
+@import url(header.css);
+
+/* Base styles – mobile first */
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  overflow-x: hidden; /* Prevents sideways scrolling */
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 5%;
+  gap: 1rem;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Consistent section sizing */
+#left-div,
+#right-div {
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Right-side content alignment */
+#right-div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-block: 1rem;
+}
+
+/* Responsive image styling */
+#eco-tron {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Table styling */
+td {
+  font-family: 'Roboto', sans-serif;
+  padding: 0.5rem;
+  text-align: left;
+  word-break: break-word;
+  font-size: 1rem;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  #container {
+    flex-direction: row;
+    padding-inline: 10%;
+    align-items: center;
+  }
+
+  #eco-tron {
+    max-width: 50%;
+  }
+
+  td {
+    text-align: center;
+  }
+}
